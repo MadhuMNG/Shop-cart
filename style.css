@@ -70,16 +70,6 @@
                 }
             }
             
-            .footer {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                background-color: #00b2ca;
-                color: antiquewhite;
-                padding-bottom: 50px;
-                margin-top: -1px;
-            }
-            
             .item {
                 border: 2px solid blue;
                 border-radius: 4px;
@@ -112,4 +102,14 @@
             
             .bi-patch-plus-fill {
                 color: green;
+            }
+            
+            .footer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                background-color: #00b2ca;
+                color: antiquewhite;
+                padding-bottom: 50px;
+                margin-top: 30px;
             }
