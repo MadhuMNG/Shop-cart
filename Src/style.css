@@ -17,7 +17,15 @@
             i {
                 cursor: pointer;
             }
+            
+            a {
+                text-decoration: none;
+                columns: white;
+            }
             /**
+
+
+
 * ! .navbar.styles.of.the.browser
 
 **/
@@ -25,11 +33,12 @@
             .navbar {
                 display: flex;
                 flex-direction: row;
+                align-items: center;
                 justify-content: space-between;
                 background-color: #00b2ca;
                 color: antiquewhite;
                 padding: 25px 60px;
-                margin-bottom: 50px;
+                margin-bottom: 30px;
             }
             
             .cart {
@@ -44,7 +53,7 @@
             .cartAmount {
                 position: absolute;
                 top: -15px;
-                right: -5px;
+                right: -10px;
                 font-size: 16px;
                 background-color: rgb(235, 62, 62);
                 color: rgb(244, 252, 252);
@@ -54,26 +63,32 @@
             
             .shop {
                 display: grid;
-                grid-template-columns: repeat(4, 200px);
-                gap: 20px;
+                grid-template-columns: repeat(5, 200px);
+                gap: 30px;
                 justify-content: center;
-            }
-            
-            @media (max-width:1000px) {
-                .shop {
-                    grid-template-columns: repeat(4, 200px);
-                }
+                margin-bottom: 50px;
             }
             
             @media (max-width:800px) {
                 .shop {
-                    grid-template-columns: repeat(2, 200px);
+                    grid-template-columns: repeat(3, 200px);
+                }
+            }
+            
+            @media (max-width:500px) {
+                .shop {
+                    grid-template-columns: repeat(1, 200px);
                 }
             }
             
             .item {
                 border: 2px solid blue;
-                border-radius: 4px;
+                border-radius: 5px;
+            }
+            
+            .item img {
+                width: 100%;
+                border-radius: 2px 2px 0 0;
             }
             
             .details {
@@ -113,4 +128,74 @@
                 color: antiquewhite;
                 padding-bottom: 50px;
                 margin-top: 30px;
+            }
+            /**
+            *! style rules for label and some buttons
+            **/
+            
+            .text-center {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            
+            .HomeBtn,
+            .checkout,
+            .RemoveAll {
+                background-color: #212529;
+                color: white;
+                border: none;
+                padding: 6px;
+                border-radius: 3px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+            
+            .checkout {
+                background-color: rgb(27, 152, 27);
+            }
+            
+            .checkout {
+                background-color: rgb(59, 206, 76);
+            }
+            
+            .RemoveAll {
+                background-color: rgb(200, 122, 103);
+            }
+            
+            .bi-bag-x-fill {
+                color: red;
+                font-weight: bold;
+            }
+            
+            .shopping-cart {
+                display: grid;
+                grid-template-columns: repeat(1, 320px);
+                justify-content: center;
+                gap: 15px;
+            }
+            
+            .cart-item {
+                border: 2px solid blue;
+                border-radius: 5px;
+                display: flex;
+            }
+            
+            .title-price-x {
+                width: 195;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .title-price {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .cart-item-price {
+                background-color: rgb(29, 28, 28);
+                color: white;
+                border-radius: 4px;
+                padding 3px 6px;
             }
