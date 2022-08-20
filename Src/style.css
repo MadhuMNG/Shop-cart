@@ -11,6 +11,10 @@
             body {
                 font-family: sans-serif;
             }
+            
+            i {
+                cursor: pointer;
+            }
             /**
 * ! .navbar.styles.of.the.browser
 
@@ -55,7 +59,13 @@
             
             @media (max-width:1000px) {
                 .shop {
-                    grid-template-columns: repeat(2, 200px);
+                    grid-template-columns: repeat(4, 200px);
+                }
+            }
+            
+            @media (max-width:800px) {
+                .shop {
+                    grid-template-columns: repeat(3, 200px);
                 }
             }
             
@@ -97,4 +107,14 @@
             
             .bi-patch-plus-fill {
                 color: green;
+            }
+            
+            .footer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                background-color: #00b2ca;
+                color: antiquewhite;
+                margin-top: 30px;
+                padding: 10px;
             }
